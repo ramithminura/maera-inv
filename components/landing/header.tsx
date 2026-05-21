@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
-import { Package2 } from 'lucide-react'
+import { Gem } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Avatar, AvatarFallback } from '@/components/ui/avatar'
 import {
@@ -28,16 +28,16 @@ export function Header({ userEmail }: HeaderProps) {
     router.refresh()
   }
 
-  const initials = userEmail
-    ? userEmail.slice(0, 2).toUpperCase()
-    : ''
+  const initials = userEmail ? userEmail.slice(0, 2).toUpperCase() : ''
 
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur-sm">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-2 font-semibold text-foreground">
-          <Package2 className="size-5 text-primary" />
-          <span>Maera</span>
+        <Link href="/" className="flex items-center gap-2 text-foreground">
+          <Gem className="size-5 text-primary" />
+          <div>
+            <span className="text-sm font-semibold leading-none">The Vault</span>
+          </div>
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm text-muted-foreground md:flex">
@@ -47,8 +47,8 @@ export function Header({ userEmail }: HeaderProps) {
           <Link href="#pricing" className="hover:text-foreground transition-colors">
             Pricing
           </Link>
-          <Link href="#" className="hover:text-foreground transition-colors">
-            Docs
+          <Link href="#contact" className="hover:text-foreground transition-colors">
+            Contact
           </Link>
         </nav>
 
@@ -71,10 +71,7 @@ export function Header({ userEmail }: HeaderProps) {
                   <Link href="/dashboard">Dashboard</Link>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
-                <DropdownMenuItem
-                  variant="destructive"
-                  onSelect={handleLogout}
-                >
+                <DropdownMenuItem variant="destructive" onSelect={handleLogout}>
                   Log out
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -85,7 +82,7 @@ export function Header({ userEmail }: HeaderProps) {
                 <Link href="/login">Log in</Link>
               </Button>
               <Button size="sm" asChild>
-                <Link href="/signup">Get started</Link>
+                <Link href="/signup">Get Started</Link>
               </Button>
             </>
           )}

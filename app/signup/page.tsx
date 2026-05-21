@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Package2, MailCheck } from 'lucide-react'
+import { Gem, MailCheck } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -50,8 +50,8 @@ export default function SignupPage() {
     return (
       <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4">
         <Link href="/" className="mb-8 flex items-center gap-2 font-semibold text-foreground">
-          <Package2 className="size-5 text-primary" />
-          <span>Maera</span>
+          <Gem className="size-5 text-primary" />
+          <span>The Vault</span>
         </Link>
 
         <Card className="w-full max-w-sm text-center">
@@ -78,7 +78,7 @@ export default function SignupPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4">
       <Link href="/" className="mb-8 flex items-center gap-2 font-semibold text-foreground">
-        <Package2 className="size-5 text-primary" />
+        <Gem className="size-5 text-primary" />
         <span>Maera</span>
       </Link>
 

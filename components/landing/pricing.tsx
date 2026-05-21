@@ -6,17 +6,18 @@ import { cn } from '@/lib/utils'
 
 const tiers = [
   {
-    name: 'Free',
-    price: '$0',
-    period: '/month',
-    description: 'Perfect for individuals getting started.',
+    name: 'Starter',
+    price: 'Free',
+    period: '',
+    description: 'For individual jewellers getting started.',
     features: [
-      '1 location',
-      'Up to 500 SKUs',
-      'Basic inventory reports',
+      '1 user',
+      'Up to 100 products',
+      'Gold & gemstone inventory',
+      'Basic reports',
       'Email support',
     ],
-    cta: 'Get started',
+    cta: 'Get Started',
     href: '/signup',
     highlighted: false,
   },
@@ -24,34 +25,34 @@ const tiers = [
     name: 'Pro',
     price: '$29',
     period: '/month',
-    description: 'For growing teams that need more power.',
+    description: 'For growing jewellery workshops and boutiques.',
     features: [
-      'Unlimited locations',
-      'Up to 10,000 SKUs',
-      'Advanced analytics',
-      'Smart alerts & notifications',
-      'Team collaboration (5 seats)',
+      'Up to 5 users',
+      'Unlimited products',
+      'Full CRM',
+      'Custom order quoting',
+      'Invoicing & payments',
       'Priority support',
     ],
-    cta: 'Start free trial',
+    cta: 'Start Free Trial',
     href: '/signup',
     highlighted: true,
   },
   {
     name: 'Enterprise',
-    price: 'Custom',
+    price: 'Contact Us',
     period: '',
-    description: 'For large organizations with complex needs.',
+    description: 'For multi-location chains and wholesalers.',
     features: [
-      'Unlimited SKUs',
-      'SSO & SAML support',
-      'Full API access',
+      'Unlimited users',
+      'Multi-location support',
+      'SSO & role-based access',
       'Custom integrations',
-      'Dedicated success manager',
+      'Dedicated account manager',
       'SLA guarantee',
     ],
-    cta: 'Contact sales',
-    href: 'mailto:sales@maera.io',
+    cta: 'Contact Sales',
+    href: 'mailto:hello@thevault.app',
     highlighted: false,
   },
 ]
@@ -65,7 +66,7 @@ export function Pricing() {
             Simple, transparent pricing
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Start for free, upgrade when you&apos;re ready. No hidden fees.
+            Start free, upgrade when your business grows. No hidden fees.
           </p>
         </div>
 
@@ -81,7 +82,7 @@ export function Pricing() {
               {highlighted && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
-                    Most popular
+                    Recommended
                   </span>
                 </div>
               )}

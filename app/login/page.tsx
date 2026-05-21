@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { Package2 } from 'lucide-react'
+import { Gem } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -45,14 +45,14 @@ export default function LoginPage() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4">
       <Link href="/" className="mb-8 flex items-center gap-2 font-semibold text-foreground">
-        <Package2 className="size-5 text-primary" />
-        <span>Maera</span>
+        <Gem className="size-5 text-primary" />
+        <span>The Vault</span>
       </Link>
 
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle className="text-xl">Welcome back</CardTitle>
-          <CardDescription>Sign in to your Maera account</CardDescription>
+          <CardDescription>Sign in to your Vault account</CardDescription>
         </CardHeader>
 
         <form onSubmit={handleSubmit}>

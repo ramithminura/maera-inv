@@ -1,42 +1,42 @@
-import { Activity, Bell, BarChart3, Globe, Users, Zap } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
+import { Coins, Gem, FileText, Receipt, Users, BarChart3 } from 'lucide-react'
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/card'
 
 const features = [
   {
-    icon: Activity,
-    title: 'Real-time Tracking',
+    icon: Coins,
+    title: 'Gold Stock Tracking',
     description:
-      'Monitor inventory levels across every location the moment they change. No more manual counts or stale spreadsheets.',
+      'Log gold purchases by weight and purity. Track remaining grams, weighted average cost, and estimated value across 24K, 22K, 18K, and 14K stock.',
   },
   {
-    icon: Bell,
-    title: 'Smart Alerts',
+    icon: Gem,
+    title: 'Gemstone Management',
     description:
-      'Set reorder thresholds and receive automated notifications before you run out of critical stock.',
+      'Manage gemstone lots and individual stones by carats and pieces. Record clarity, colour, and certificate numbers for full traceability.',
   },
   {
-    icon: BarChart3,
-    title: 'Analytics Dashboard',
+    icon: FileText,
+    title: 'Custom Order Quoting',
     description:
-      'Understand sales velocity, stock turnover, and seasonal trends with clear, actionable reports.',
+      'Build accurate quotes for bespoke jewellery using live gold rates, alloy compositions, and gemstone costs sourced directly from your inventory.',
   },
   {
-    icon: Globe,
-    title: 'Multi-location',
+    icon: Receipt,
+    title: 'Invoicing & Payments',
     description:
-      'Manage inventory across warehouses, retail stores, and fulfillment centers from a single platform.',
+      'Generate professional invoices tied to orders. Track deposits, balances due, and full payment history for every customer.',
   },
   {
     icon: Users,
-    title: 'Team Collaboration',
+    title: 'Customer CRM',
     description:
-      'Role-based access controls and full audit logs keep your team aligned and your data secure.',
+      'Maintain complete customer records with order history, preferences, ring sizes, and a communication log for calls and messages.',
   },
   {
-    icon: Zap,
-    title: 'Integrations',
+    icon: BarChart3,
+    title: 'Analytics & Reports',
     description:
-      'Connect with Shopify, QuickBooks, WooCommerce, and dozens more tools your business already uses.',
+      'Understand your gold consumption, stock turnover, sales trends, and profitability with clear, exportable reports.',
   },
 ]
 
@@ -46,11 +46,11 @@ export function Features() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Everything you need to manage inventory
+            Everything a jewellery business needs
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Maera gives your team the tools to stay on top of stock — without
-            the complexity of enterprise software.
+            The Vault gives your team the tools to manage precious inventory
+            with precision — without the complexity of generic ERP software.
           </p>
         </div>
 
